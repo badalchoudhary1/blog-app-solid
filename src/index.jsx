@@ -32,6 +32,7 @@ const routes = [
     { path: "/about", component: lazy(() => import("./components/About.jsx")) },
     { path: "/contact", component: lazy(() => import("./components/Contact.jsx")) },
     { path: "/blog/:id", component: lazy(() => import("./components/BlogDetails.jsx")) },
+    {path:  "/counterapp",component:lazy(() => import("./components/counterapp.jsx"))},
 ];
 
 render(
