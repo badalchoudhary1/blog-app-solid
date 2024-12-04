@@ -1,7 +1,6 @@
 import { A } from "@solidjs/router";
 
 function App() {
-
   return  <div class="container mx-auto">
       <nav>
       <A href="/about">Abuot</A><br />
