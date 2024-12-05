@@ -35,6 +35,8 @@ const routes = [
     {path:  "/counterapp",component:lazy(() => import("./components/counterapp.jsx"))},
     {path:"/age",component:lazy(()=>import("./components/age.jsx"))},
     {path:"/counter",component:lazy(()=>import("./components/counter.jsx"))},
+    {path:"/welcome",component:lazy(()=>import("./components/welcome.jsx"))},
+    {path:"/timer",component:lazy(()=>import("./components/timer.jsx"))}, 
 ];
 
 render(
