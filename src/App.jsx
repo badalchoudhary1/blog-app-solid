@@ -64,36 +64,36 @@
 // export default App;
 
 
-// import { createSignal } from "solid-js";
-
-// function App() {
-//   const [items, setItems] = createSignal(["Apple", "Banana", "Cherry"]);
-
-//   return (
-//     <div>
-//       <h3>Fruits List:</h3>
-//       <ul>
-//         <For each={items()}>{(item, index) => <li>{index() + 1}. {item}</li>}</For>
-//       </ul>
-//       <button onClick={() => setItems([...items(), "Mango"])}>Add Mango</button>
-//     </div>
-//   );
-// }
-
-// export default App;
+import { createSignal } from "solid-js";
 
 function App() {
-  const handleSubmit = (event) => {
-    event.preventDefault(); // Prevent page reload
-    alert("Form submitted!");
-  };
+  const [items, setItems] = createSignal(["Apple", "Banana", "Cherry"]);
 
   return (
-    <form onSubmit={handleSubmit}>
-      <input type="text" placeholder="Enter your name" />
-      <button type="submit">Submit</button>
-    </form>
+    <div>
+      <h3>Fruits List:</h3>
+      <ul>
+        <For each={items()}>{(item, index) => <li>{index() + 1}. {item}</li>}</For>
+      </ul>
+      <button onClick={() => setItems([...items(), "Mango"])}>Add Mango</button>
+    </div>
   );
 }
 
 export default App;
+
+// function App() {
+//   const handleSubmit = (event) => {
+//     event.preventDefault(); // Prevent page reload
+//     alert("Form submitted!");
+//   };
+
+//   return (
+//     <form onSubmit={handleSubmit}>
+//       <input type="text" placeholder="Enter your name" />
+//       <button type="submit">Submit</button>
+//     </form>
+//   );
+// }
+
+// export default App;
