@@ -1,7 +1,6 @@
 /* @refresh reload */
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
-import App from './App';
 
 import { lazy } from "solid-js";
 import { render } from "solid-js/web";
@@ -37,6 +36,7 @@ const routes = [
     {path:"/counter",component:lazy(()=>import("./components/counter.jsx"))},
     {path:"/welcome",component:lazy(()=>import("./components/welcome.jsx"))},
     {path:"/timer",component:lazy(()=>import("./components/timer.jsx"))}, 
+    {path:"/app",component:lazy(()=>import("./App.jsx"))}, 
 ];
 
 render(
